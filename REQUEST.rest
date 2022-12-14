@@ -1,0 +1,22 @@
+GET http://localhost:3000/sensors
+###
+GET http://localhost:3000/sensor/444
+###
+POST http://localhost:3000/sensor
+Content-Type: application/json
+
+{
+    "id":"444",
+    "type":"CLUETA",
+    "datas":[1,2,3],
+    "metrics": true
+}
+###
+DELETE http://localhost:3000/sensor/444
+###
+PUT http://localhost:3000/sensor/444
+Content-Type: application/json
+
+{
+    "type":"Modified"
+}
